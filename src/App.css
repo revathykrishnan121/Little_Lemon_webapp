@@ -1,5 +1,5 @@
 body {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -9,23 +9,25 @@ header {
   grid-template-columns: repeat(12, 1fr);
   padding-left: 15%;
   padding-right: 15%;
+  margin-bottom: 20px;
 }
 
 nav {
   grid-column: 3/span 12;
-
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-top: 12px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 9px;
 
   a {
     text-decoration: none;
     color: black;
     font-weight: bold;
   }
+}
+
+main{
+  min-height:65vh;
 }
 
 /*....Banner.....*/
