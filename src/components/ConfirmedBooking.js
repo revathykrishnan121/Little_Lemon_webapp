@@ -1,4 +1,4 @@
 function ConfirmedBooking() {
-    return (<div>Confirmed the Booking!</div>)
+    return (<div className="confirmation">Confirmed the Booking!</div>)
 }
 export default ConfirmedBooking;

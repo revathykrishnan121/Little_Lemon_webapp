@@ -26,8 +26,8 @@ nav {
   }
 }
 
-main{
-  min-height:65vh;
+main {
+  min-height: 65vh;
 }
 
 /*....Banner.....*/
@@ -131,4 +131,31 @@ footer div {
 footer div:last-child {
   text-align: right;
   border-top: 1px solid black;
+}
+
+/*....Form Styles----*/
+.reserve-table-container {
+  padding-left: 15em;
+  padding-right: 15em;
+}
+
+.field {
+  padding: 10px;
+
+  label {
+    margin-right: 2em;
+  }
+}
+
+/*....Confirmation Page....*/
+.confirmation {
+  background-color: #495E57;
+  padding-left: 15em;
+  padding-right: 15em;
+  min-height: 40vh;
+  color: white;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,10 +3,12 @@ import greekSalad from "../assets/greekSalad.jpg"
 import bruchetta from "../assets/bruchetta.svg"
 import lemonDessert from "../assets/lemonDessert.jpg"
 import FoodCard from "./FoodCard";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
     const reserveTable = () => {
-
+        navigate("/reserve")
     }
     return (
         <>
