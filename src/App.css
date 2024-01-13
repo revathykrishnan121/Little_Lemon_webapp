@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*.....Header.....*/
+header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+nav {
+  grid-column: 3/span 12;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 12px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*....Banner.....*/
+.banner {
+  background-color: #495E57;
   color: white;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  article {
+    display: flex;
+    gap: 15rem;
+
+    h1 {
+      font-size: 2.7em;
+      color: #F4CE14;
+      margin: 0px;
+      margin-top: 10px;
+    }
+
+    h2 {
+      margin-top: 0px;
+    }
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/*......Section Heading......*/
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+
+  h2 {
+    margin: 0px;
+    font-size: 2em;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*.....Section Content.....*/
+.sectionContent {
+  display: flex;
+  gap: 2em;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  article {
+    background-color: #EDEFEE;
+    flex: 1;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.details {
+  padding: 1em;
+  display: grid;
+  grid-template-rows: 0fr 2fr 1fr;
+
+  div {
+    padding-bottom: 2em;
+    padding-top: 1em;
   }
+}
+
+figcaption {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    color: #EE9972;
+  }
+}
+
+/*....Buttons.....*/
+.button-style {
+  background-color: #F4CE14;
+  padding: 1em 1.5em;
+  border: 0px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*.....Footer.............*/
+footer {
+  display: flex;
+  margin-top: 2rem;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+footer div {
+  flex: 1;
+
+  img {
+    width: 30px;
+  }
+}
+
+footer div:last-child {
+  text-align: right;
+  border-top: 1px solid black;
 }

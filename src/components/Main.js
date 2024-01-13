@@ -1,4 +1,10 @@
+import Home from "./Home";
+
 function Main() {
-    return (<main></main>)
+    return (
+    <main>
+        <Home></Home>
+    </main>
+    )
 }
 export default Main;
